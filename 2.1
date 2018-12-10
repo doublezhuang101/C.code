@@ -1,0 +1,15 @@
+#include <math.h>
+#include <stdio.h>
+double   fun(int  m)
+{
+	double s = 0.0;
+	int i;
+	for (i = 1; i <= m; i++)
+		s = s + log(i);
+	return sqrt(s);
+}
+int main()
+{
+	printf("%f\n", fun(20));
+	return 0;
+}
